@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+<a href="../UserTask/TaskForm">Add a task</a>
+<a href="../UserTask/CreateUser">Add user</a>
+<h2>Login</h2>
+
+
+<form action="../UserTask/UserPage" method="post">
+    <input type="email" name="Email" placeholder="Email" required />
+    <input type="password" name="Password" placeholder="Password" required />
+    <input type="submit" class="btn-success" value="Login" />
+</form>
+
+<h3>@ViewBag.ErrorMessage</h3>
