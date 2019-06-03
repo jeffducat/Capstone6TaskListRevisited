@@ -19,8 +19,8 @@
             <td id="description">@task.Description</td>
             <td id="dueDate">@task.DueDate.ToShortDateString()</td>
             <td id="status">@task.Status</td>
-            <td><a href="../UserTask/UserTask/UserId?Id=@task.Id" class="btn-primary">Update</a></td>
-            <td><a href="../UserTask/UserTask/UserId?Id=@task.Id" class="btn-danger">Delete</a></td>
+            <td><a href="../UserTask/UpdateTask?TaskId=@task.Id" class="btn-primary">Update</a></td>
+            <td><a href="../UserTask/DeleteTask?TaskId=@task.Id" class="btn-danger">Delete</a></td>
         </tr>
     }
 </table>
